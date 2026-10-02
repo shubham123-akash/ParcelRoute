@@ -1,0 +1,32 @@
+{
+  "name": "parcel-routing-server",
+  "version": "1.0.0",
+  "description": "Backend for Parcel Routing System",
+  "type": "module",
+  "scripts": {
+  "dev": "nodemon server.js",
+  "start": "node server.js",
+  "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand",
+  "seed:rules": "node seed/seedRules.js"
+},
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "morgan": "^1.10.1",
+    "mongo-sanitize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3",
+    "nodemon": "^3.1.10"
+  }
+}
